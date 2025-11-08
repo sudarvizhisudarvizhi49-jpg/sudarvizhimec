@@ -13,7 +13,17 @@ export const MenuCard = ({ item }: MenuCardProps) => {
   const { addToCart } = useCart();
 
   return (
-    <Card className="overflow-hidden hover:shadow-md transition-shadow">
+    <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+      {item.image && (
+        <div className="aspect-[4/3] overflow-hidden bg-muted">
+          <img
+            src={item.image}
+            alt={item.name}
+            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+      )}
       <CardContent className="p-4">
         <div className="flex items-start justify-between mb-2">
           <div className="flex-1">

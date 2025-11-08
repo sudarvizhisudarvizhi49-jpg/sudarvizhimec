@@ -1,4 +1,16 @@
 import { MenuItem } from "@/types/menu";
+import idliImg from "@/assets/food/idli.jpg";
+import dosaImg from "@/assets/food/dosa.jpg";
+import vegMealsImg from "@/assets/food/veg-meals.jpg";
+import pongalImg from "@/assets/food/pongal.jpg";
+import pooriImg from "@/assets/food/poori.jpg";
+import curdRiceImg from "@/assets/food/curd-rice.jpg";
+import chickenBiryaniImg from "@/assets/food/chicken-biryani.jpg";
+import eggCurryImg from "@/assets/food/egg-curry.jpg";
+import fishFryImg from "@/assets/food/fish-fry.jpg";
+import chicken65Img from "@/assets/food/chicken-65.jpg";
+import muttonCurryImg from "@/assets/food/mutton-curry.jpg";
+import eggFriedRiceImg from "@/assets/food/egg-fried-rice.jpg";
 
 export const menuItems: MenuItem[] = [
   {
@@ -7,6 +19,7 @@ export const menuItems: MenuItem[] = [
     description: "Soft and fluffy steamed rice cakes served with sambar and chutney",
     price: 30,
     category: "veg",
+    image: idliImg,
     available: true,
   },
   {
@@ -15,6 +28,7 @@ export const menuItems: MenuItem[] = [
     description: "Crispy dosa filled with spiced potato masala",
     price: 45,
     category: "veg",
+    image: dosaImg,
     available: true,
   },
   {
@@ -23,6 +37,7 @@ export const menuItems: MenuItem[] = [
     description: "Complete South Indian thali with rice, sambar, rasam, and curries",
     price: 70,
     category: "veg",
+    image: vegMealsImg,
     available: true,
   },
   {
@@ -31,6 +46,7 @@ export const menuItems: MenuItem[] = [
     description: "Traditional rice and lentil dish served with sambar and chutney",
     price: 35,
     category: "veg",
+    image: pongalImg,
     available: true,
   },
   {
@@ -39,6 +55,7 @@ export const menuItems: MenuItem[] = [
     description: "Fluffy puris served with potato masala",
     price: 40,
     category: "veg",
+    image: pooriImg,
     available: true,
   },
   {
@@ -47,6 +64,7 @@ export const menuItems: MenuItem[] = [
     description: "Cooling curd rice with tempering and pickle",
     price: 35,
     category: "veg",
+    image: curdRiceImg,
     available: true,
   },
   {
@@ -55,6 +73,7 @@ export const menuItems: MenuItem[] = [
     description: "Aromatic basmati rice layered with spiced chicken",
     price: 120,
     category: "nonveg",
+    image: chickenBiryaniImg,
     available: true,
   },
   {
@@ -63,6 +82,7 @@ export const menuItems: MenuItem[] = [
     description: "Boiled eggs in rich tomato-onion gravy",
     price: 60,
     category: "nonveg",
+    image: eggCurryImg,
     available: true,
   },
   {
@@ -71,6 +91,7 @@ export const menuItems: MenuItem[] = [
     description: "Crispy fried fish marinated with South Indian spices",
     price: 100,
     category: "nonveg",
+    image: fishFryImg,
     available: true,
   },
   {
@@ -79,6 +100,7 @@ export const menuItems: MenuItem[] = [
     description: "Spicy deep-fried chicken appetizer",
     price: 90,
     category: "nonveg",
+    image: chicken65Img,
     available: true,
   },
   {
@@ -87,6 +109,7 @@ export const menuItems: MenuItem[] = [
     description: "Tender mutton pieces in spicy curry",
     price: 130,
     category: "nonveg",
+    image: muttonCurryImg,
     available: true,
   },
   {
@@ -95,6 +118,7 @@ export const menuItems: MenuItem[] = [
     description: "Fried rice tossed with eggs and vegetables",
     price: 70,
     category: "nonveg",
+    image: eggFriedRiceImg,
     available: true,
   },
 ];
