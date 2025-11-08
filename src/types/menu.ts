@@ -1,4 +1,4 @@
-export type FoodCategory = "veg" | "nonveg";
+export type FoodCategory = "veg" | "nonveg" | "dessert" | "beverages";
 
 export interface MenuItem {
   id: string;
@@ -8,6 +8,8 @@ export interface MenuItem {
   category: FoodCategory;
   image?: string;
   available: boolean;
+  rating?: number;
+  reviewCount?: number;
 }
 
 export interface CartItem extends MenuItem {

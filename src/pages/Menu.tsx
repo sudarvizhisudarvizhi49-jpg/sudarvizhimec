@@ -4,7 +4,7 @@ import { MenuCard } from "@/components/MenuCard";
 import { CartSheet } from "@/components/CartSheet";
 import { menuItems } from "@/data/menuData";
 import { FoodCategory } from "@/types/menu";
-import { Leaf, Drumstick } from "lucide-react";
+import { Leaf, Drumstick, IceCream, Droplet } from "lucide-react";
 
 const Menu = () => {
   const [filter, setFilter] = useState<FoodCategory | "all">("all");
@@ -49,6 +49,20 @@ const Menu = () => {
             >
               <Drumstick className="h-4 w-4 mr-2" />
               Non-Veg
+            </Button>
+            <Button
+              variant={filter === "dessert" ? "default" : "outline"}
+              onClick={() => setFilter("dessert")}
+            >
+              <IceCream className="h-4 w-4 mr-2" />
+              Desserts
+            </Button>
+            <Button
+              variant={filter === "beverages" ? "default" : "outline"}
+              onClick={() => setFilter("beverages")}
+            >
+              <Droplet className="h-4 w-4 mr-2" />
+              Beverages
             </Button>
           </div>
         </div>

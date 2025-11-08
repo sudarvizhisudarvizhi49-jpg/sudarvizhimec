@@ -2,7 +2,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MenuItem } from "@/types/menu";
-import { Leaf, Drumstick, Plus } from "lucide-react";
+import { Leaf, Drumstick, Plus, Star, IceCream, Droplet } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
 
 interface MenuCardProps {
@@ -29,9 +29,18 @@ export const MenuCard = ({ item }: MenuCardProps) => {
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-1">
               <h3 className="font-semibold text-base">{item.name}</h3>
-              <Badge variant={item.category === "veg" ? "secondary" : "default"} className="h-5">
+              <Badge variant={
+                item.category === "veg" ? "secondary" : 
+                item.category === "dessert" ? "outline" : 
+                item.category === "beverages" ? "outline" : 
+                "default"
+              } className="h-5">
                 {item.category === "veg" ? (
                   <Leaf className="h-3 w-3" />
+                ) : item.category === "dessert" ? (
+                  <IceCream className="h-3 w-3" />
+                ) : item.category === "beverages" ? (
+                  <Droplet className="h-3 w-3" />
                 ) : (
                   <Drumstick className="h-3 w-3" />
                 )}
@@ -40,6 +49,15 @@ export const MenuCard = ({ item }: MenuCardProps) => {
             <p className="text-sm text-muted-foreground line-clamp-2">
               {item.description}
             </p>
+            {item.rating && (
+              <div className="flex items-center gap-1 mt-1">
+                <Star className="h-3 w-3 fill-amber-500 text-amber-500" />
+                <span className="text-sm font-medium">{item.rating}</span>
+                {item.reviewCount && (
+                  <span className="text-xs text-muted-foreground">({item.reviewCount})</span>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </CardContent>

@@ -32,6 +32,14 @@ const Index = () => {
               Order Now
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="text-lg px-8 bg-white/10 backdrop-blur border-white/20 text-white hover:bg-white/20"
+              onClick={() => navigate("/auth")}
+            >
+              Sign In
+            </Button>
           </div>
         </div>
       </section>

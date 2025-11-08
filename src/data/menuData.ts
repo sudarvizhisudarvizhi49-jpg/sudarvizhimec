@@ -11,6 +11,14 @@ import fishFryImg from "@/assets/food/fish-fry.jpg";
 import chicken65Img from "@/assets/food/chicken-65.jpg";
 import muttonCurryImg from "@/assets/food/mutton-curry.jpg";
 import eggFriedRiceImg from "@/assets/food/egg-fried-rice.jpg";
+import gulabJamunImg from "@/assets/food/gulab-jamun.jpg";
+import iceCreamImg from "@/assets/food/ice-cream.jpg";
+import rasmalaiImg from "@/assets/food/rasmalai.jpg";
+import payasamImg from "@/assets/food/payasam.jpg";
+import mangoJuiceImg from "@/assets/food/mango-juice.jpg";
+import orangeJuiceImg from "@/assets/food/orange-juice.jpg";
+import watermelonJuiceImg from "@/assets/food/watermelon-juice.jpg";
+import limeSodaImg from "@/assets/food/lime-soda.jpg";
 
 export const menuItems: MenuItem[] = [
   {
@@ -21,6 +29,8 @@ export const menuItems: MenuItem[] = [
     category: "veg",
     image: idliImg,
     available: true,
+    rating: 4.5,
+    reviewCount: 234,
   },
   {
     id: "2",
@@ -30,6 +40,8 @@ export const menuItems: MenuItem[] = [
     category: "veg",
     image: dosaImg,
     available: true,
+    rating: 4.7,
+    reviewCount: 312,
   },
   {
     id: "3",
@@ -39,6 +51,8 @@ export const menuItems: MenuItem[] = [
     category: "veg",
     image: vegMealsImg,
     available: true,
+    rating: 4.6,
+    reviewCount: 189,
   },
   {
     id: "4",
@@ -48,6 +62,8 @@ export const menuItems: MenuItem[] = [
     category: "veg",
     image: pongalImg,
     available: true,
+    rating: 4.3,
+    reviewCount: 156,
   },
   {
     id: "5",
@@ -57,6 +73,8 @@ export const menuItems: MenuItem[] = [
     category: "veg",
     image: pooriImg,
     available: true,
+    rating: 4.4,
+    reviewCount: 178,
   },
   {
     id: "6",
@@ -66,6 +84,8 @@ export const menuItems: MenuItem[] = [
     category: "veg",
     image: curdRiceImg,
     available: true,
+    rating: 4.2,
+    reviewCount: 145,
   },
   {
     id: "7",
@@ -75,6 +95,8 @@ export const menuItems: MenuItem[] = [
     category: "nonveg",
     image: chickenBiryaniImg,
     available: true,
+    rating: 4.9,
+    reviewCount: 421,
   },
   {
     id: "8",
@@ -84,6 +106,8 @@ export const menuItems: MenuItem[] = [
     category: "nonveg",
     image: eggCurryImg,
     available: true,
+    rating: 4.3,
+    reviewCount: 187,
   },
   {
     id: "9",
@@ -93,6 +117,8 @@ export const menuItems: MenuItem[] = [
     category: "nonveg",
     image: fishFryImg,
     available: true,
+    rating: 4.6,
+    reviewCount: 198,
   },
   {
     id: "10",
@@ -102,6 +128,8 @@ export const menuItems: MenuItem[] = [
     category: "nonveg",
     image: chicken65Img,
     available: true,
+    rating: 4.7,
+    reviewCount: 289,
   },
   {
     id: "11",
@@ -111,6 +139,8 @@ export const menuItems: MenuItem[] = [
     category: "nonveg",
     image: muttonCurryImg,
     available: true,
+    rating: 4.8,
+    reviewCount: 234,
   },
   {
     id: "12",
@@ -120,5 +150,95 @@ export const menuItems: MenuItem[] = [
     category: "nonveg",
     image: eggFriedRiceImg,
     available: true,
+    rating: 4.2,
+    reviewCount: 78,
+  },
+  {
+    id: "13",
+    name: "Gulab Jamun",
+    description: "Soft milk-solid balls soaked in sugar syrup",
+    price: 25,
+    category: "dessert",
+    image: gulabJamunImg,
+    available: true,
+    rating: 4.8,
+    reviewCount: 156,
+  },
+  {
+    id: "14",
+    name: "Kulfi Ice Cream",
+    description: "Traditional Indian ice cream with nuts and saffron",
+    price: 30,
+    category: "dessert",
+    image: iceCreamImg,
+    available: true,
+    rating: 4.7,
+    reviewCount: 123,
+  },
+  {
+    id: "15",
+    name: "Rasmalai",
+    description: "Soft paneer dumplings in sweet cardamom-flavored milk",
+    price: 35,
+    category: "dessert",
+    image: rasmalaiImg,
+    available: true,
+    rating: 4.9,
+    reviewCount: 198,
+  },
+  {
+    id: "16",
+    name: "Payasam",
+    description: "Traditional South Indian rice pudding with nuts",
+    price: 30,
+    category: "dessert",
+    image: payasamImg,
+    available: true,
+    rating: 4.6,
+    reviewCount: 89,
+  },
+  {
+    id: "17",
+    name: "Mango Juice",
+    description: "Fresh mango juice with a hint of mint",
+    price: 35,
+    category: "beverages",
+    image: mangoJuiceImg,
+    available: true,
+    rating: 4.5,
+    reviewCount: 201,
+  },
+  {
+    id: "18",
+    name: "Orange Juice",
+    description: "Freshly squeezed orange juice",
+    price: 30,
+    category: "beverages",
+    image: orangeJuiceImg,
+    available: true,
+    rating: 4.3,
+    reviewCount: 145,
+  },
+  {
+    id: "19",
+    name: "Watermelon Juice",
+    description: "Refreshing watermelon juice with mint",
+    price: 35,
+    category: "beverages",
+    image: watermelonJuiceImg,
+    available: true,
+    rating: 4.4,
+    reviewCount: 112,
+  },
+  {
+    id: "20",
+    name: "Lime Soda",
+    description: "Fizzy lime soda with ice and mint",
+    price: 25,
+    category: "beverages",
+    image: limeSodaImg,
+    available: true,
+    rating: 4.2,
+    reviewCount: 167,
   },
 ];
