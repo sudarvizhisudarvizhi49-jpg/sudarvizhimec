@@ -1,4 +1,5 @@
-export type FoodCategory = "veg" | "nonveg" | "dessert" | "beverages";
+export type FoodCategory = "breakfast" | "lunch" | "dinner" | "snacks" | "dessert" | "beverages";
+export type MealTime = "breakfast" | "lunch" | "dinner";
 
 export interface MenuItem {
   id: string;
