@@ -3,9 +3,10 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { MenuCard } from "@/components/MenuCard";
 import { CartSheet } from "@/components/CartSheet";
+import { FeedbackDialog } from "@/components/FeedbackDialog";
 import { menuItems } from "@/data/menuData";
 import { FoodCategory } from "@/types/menu";
-import { Coffee, IceCream, Droplet, UtensilsCrossed, User, LogOut, Shield } from "lucide-react";
+import { Coffee, IceCream, Droplet, UtensilsCrossed, User, LogOut, Shield, LogIn } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useUserRole } from "@/hooks/useUserRole";
 import { toast } from "sonner";
@@ -40,7 +41,7 @@ const Menu = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <h1 className="text-2xl font-bold">MEC Canteen</h1>
           <div className="flex items-center gap-2">
-            {userEmail && (
+            {userEmail ? (
               <>
                 {role === "admin" && (
                   <Button
@@ -52,6 +53,7 @@ const Menu = () => {
                     Admin
                   </Button>
                 )}
+                <FeedbackDialog />
                 <Button
                   variant="outline"
                   size="sm"
@@ -64,6 +66,15 @@ const Menu = () => {
                   <LogOut className="h-4 w-4" />
                 </Button>
               </>
+            ) : (
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => navigate("/auth")}
+              >
+                <LogIn className="h-4 w-4 mr-2" />
+                Sign In
+              </Button>
             )}
             <CartSheet />
           </div>
