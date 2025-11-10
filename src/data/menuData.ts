@@ -23,6 +23,27 @@ import fruitNutMixImg from "@/assets/food/fruit-nut-mix.jpg";
 import sproutSaladImg from "@/assets/food/sprout-salad.jpg";
 import roastedChickpeasImg from "@/assets/food/roasted-chickpeas.jpg";
 import vegCutletImg from "@/assets/food/veg-cutlet.jpg";
+import upmaImg from "@/assets/food/upma.jpg";
+import vadaImg from "@/assets/food/vada.jpg";
+import ravaDosaImg from "@/assets/food/rava-dosa.jpg";
+import paneerButterMasalaImg from "@/assets/food/paneer-butter-masala.jpg";
+import dalTadkaImg from "@/assets/food/dal-tadka.jpg";
+import sambarRiceImg from "@/assets/food/sambar-rice.jpg";
+import lemonRiceImg from "@/assets/food/lemon-rice.jpg";
+import parottaKurmaImg from "@/assets/food/parotta-kurma.jpg";
+import chapatiDalImg from "@/assets/food/chapati-dal.jpg";
+import prawnFryImg from "@/assets/food/prawn-fry.jpg";
+import vegNoodlesImg from "@/assets/food/veg-noodles.jpg";
+import samosaImg from "@/assets/food/samosa.jpg";
+import masalaVadaImg from "@/assets/food/masala-vada.jpg";
+import bhajiImg from "@/assets/food/bhaji.jpg";
+import jalebiImg from "@/assets/food/jalebi.jpg";
+import halwaImg from "@/assets/food/halwa.jpg";
+import badamKheerImg from "@/assets/food/badam-kheer.jpg";
+import masalaChaiImg from "@/assets/food/masala-chai.jpg";
+import filterCoffeeImg from "@/assets/food/filter-coffee.jpg";
+import buttermilkImg from "@/assets/food/buttermilk.jpg";
+import sweetLassiImg from "@/assets/food/sweet-lassi.jpg";
 
 export const menuItems: MenuItem[] = [
   // Breakfast Items
@@ -76,7 +97,7 @@ export const menuItems: MenuItem[] = [
     description: "Savory semolina dish with vegetables and spices",
     price: 25,
     category: "breakfast",
-    image: pongalImg,
+    image: upmaImg,
     available: true,
     rating: 4.2,
     reviewCount: 143,
@@ -87,7 +108,7 @@ export const menuItems: MenuItem[] = [
     description: "Crispy lentil fritters served with chutney",
     price: 35,
     category: "breakfast",
-    image: idliImg,
+    image: vadaImg,
     available: true,
     rating: 4.5,
     reviewCount: 167,
@@ -98,7 +119,7 @@ export const menuItems: MenuItem[] = [
     description: "Crispy semolina crepe with a delicate texture",
     price: 40,
     category: "breakfast",
-    image: dosaImg,
+    image: ravaDosaImg,
     available: true,
     rating: 4.6,
     reviewCount: 192,
@@ -154,7 +175,7 @@ export const menuItems: MenuItem[] = [
     description: "Cottage cheese in rich creamy tomato gravy",
     price: 85,
     category: "lunch",
-    image: vegMealsImg,
+    image: paneerButterMasalaImg,
     available: true,
     rating: 4.7,
     reviewCount: 245,
@@ -165,7 +186,7 @@ export const menuItems: MenuItem[] = [
     description: "Yellow lentils tempered with ghee and spices",
     price: 50,
     category: "lunch",
-    image: vegMealsImg,
+    image: dalTadkaImg,
     available: true,
     rating: 4.4,
     reviewCount: 156,
@@ -176,7 +197,7 @@ export const menuItems: MenuItem[] = [
     description: "Rice mixed with flavorful lentil vegetable stew",
     price: 45,
     category: "lunch",
-    image: vegMealsImg,
+    image: sambarRiceImg,
     available: true,
     rating: 4.3,
     reviewCount: 178,
@@ -187,7 +208,7 @@ export const menuItems: MenuItem[] = [
     description: "Tangy rice flavored with lemon and peanuts",
     price: 40,
     category: "lunch",
-    image: vegMealsImg,
+    image: lemonRiceImg,
     available: true,
     rating: 4.2,
     reviewCount: 134,
@@ -243,7 +264,7 @@ export const menuItems: MenuItem[] = [
     description: "Flaky layered bread with vegetable curry",
     price: 55,
     category: "dinner",
-    image: pooriImg,
+    image: parottaKurmaImg,
     available: true,
     rating: 4.6,
     reviewCount: 201,
@@ -254,7 +275,7 @@ export const menuItems: MenuItem[] = [
     description: "Whole wheat bread served with lentil curry",
     price: 45,
     category: "dinner",
-    image: pooriImg,
+    image: chapatiDalImg,
     available: true,
     rating: 4.3,
     reviewCount: 123,
@@ -265,7 +286,7 @@ export const menuItems: MenuItem[] = [
     description: "Crispy fried prawns with coastal spices",
     price: 110,
     category: "dinner",
-    image: fishFryImg,
+    image: prawnFryImg,
     available: true,
     rating: 4.8,
     reviewCount: 187,
@@ -276,7 +297,7 @@ export const menuItems: MenuItem[] = [
     description: "Stir-fried noodles with fresh vegetables",
     price: 65,
     category: "dinner",
-    image: eggFriedRiceImg,
+    image: vegNoodlesImg,
     available: true,
     rating: 4.4,
     reviewCount: 156,
@@ -332,7 +353,7 @@ export const menuItems: MenuItem[] = [
     description: "Crispy pastry filled with spiced potatoes and peas",
     price: 30,
     category: "snacks",
-    image: vegCutletImg,
+    image: samosaImg,
     available: true,
     rating: 4.6,
     reviewCount: 198,
@@ -343,7 +364,7 @@ export const menuItems: MenuItem[] = [
     description: "Crispy lentil fritters with onions and spices",
     price: 25,
     category: "snacks",
-    image: roastedChickpeasImg,
+    image: masalaVadaImg,
     available: true,
     rating: 4.5,
     reviewCount: 145,
@@ -354,7 +375,7 @@ export const menuItems: MenuItem[] = [
     description: "Deep-fried vegetable fritters in chickpea batter",
     price: 30,
     category: "snacks",
-    image: vegCutletImg,
+    image: bhajiImg,
     available: true,
     rating: 4.4,
     reviewCount: 167,
@@ -410,7 +431,7 @@ export const menuItems: MenuItem[] = [
     description: "Crispy sweet spirals soaked in sugar syrup",
     price: 25,
     category: "dessert",
-    image: gulabJamunImg,
+    image: jalebiImg,
     available: true,
     rating: 4.5,
     reviewCount: 134,
@@ -421,7 +442,7 @@ export const menuItems: MenuItem[] = [
     description: "Rich semolina dessert with ghee and nuts",
     price: 35,
     category: "dessert",
-    image: payasamImg,
+    image: halwaImg,
     available: true,
     rating: 4.7,
     reviewCount: 112,
@@ -432,7 +453,7 @@ export const menuItems: MenuItem[] = [
     description: "Creamy almond rice pudding with cardamom",
     price: 40,
     category: "dessert",
-    image: rasmalaiImg,
+    image: badamKheerImg,
     available: true,
     rating: 4.8,
     reviewCount: 156,
@@ -488,7 +509,7 @@ export const menuItems: MenuItem[] = [
     description: "Hot spiced tea with milk and aromatic spices",
     price: 20,
     category: "beverages",
-    image: mangoJuiceImg,
+    image: masalaChaiImg,
     available: true,
     rating: 4.6,
     reviewCount: 234,
@@ -499,7 +520,7 @@ export const menuItems: MenuItem[] = [
     description: "Traditional South Indian filter coffee",
     price: 20,
     category: "beverages",
-    image: mangoJuiceImg,
+    image: filterCoffeeImg,
     available: true,
     rating: 4.8,
     reviewCount: 298,
@@ -510,7 +531,7 @@ export const menuItems: MenuItem[] = [
     description: "Cool refreshing spiced buttermilk",
     price: 15,
     category: "beverages",
-    image: limeSodaImg,
+    image: buttermilkImg,
     available: true,
     rating: 4.3,
     reviewCount: 189,
@@ -521,7 +542,7 @@ export const menuItems: MenuItem[] = [
     description: "Creamy yogurt-based drink with sugar",
     price: 30,
     category: "beverages",
-    image: mangoJuiceImg,
+    image: sweetLassiImg,
     available: true,
     rating: 4.5,
     reviewCount: 176,
