@@ -53,7 +53,6 @@ const Menu = () => {
                     Admin
                   </Button>
                 )}
-                <FeedbackDialog />
                 <Button
                   variant="outline"
                   size="sm"
@@ -76,6 +75,7 @@ const Menu = () => {
                 Sign In
               </Button>
             )}
+            <FeedbackDialog />
             <CartSheet />
           </div>
         </div>
