@@ -9,13 +9,32 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage})`,
-          }}
-        />
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+        {/* Animated gradient background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-red-600 via-purple-600 to-pink-600 animate-gradient" />
+        
+        {/* Sparkling lights */}
+        <div className="absolute inset-0">
+          {[...Array(20)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute rounded-full animate-sparkle"
+              style={{
+                width: `${Math.random() * 6 + 2}px`,
+                height: `${Math.random() * 6 + 2}px`,
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                background: ['#ff0080', '#00ffff', '#ffff00', '#ff00ff'][Math.floor(Math.random() * 4)],
+                animationDelay: `${Math.random() * 3}s`,
+                animationDuration: `${Math.random() * 2 + 2}s`,
+                boxShadow: `0 0 ${Math.random() * 20 + 10}px currentColor`,
+              }}
+            />
+          ))}
+        </div>
+        
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/30" />
         <div className="container relative z-10 mx-auto px-4 py-20 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
             Skip the Queue,<br />Order Your Food
