@@ -38,7 +38,15 @@ const Index = () => {
               className="text-lg px-8 bg-white/10 backdrop-blur border-white/20 text-white hover:bg-white/20"
               onClick={() => navigate("/auth")}
             >
-              Sign In
+              User Sign In
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="text-lg px-8 bg-white/10 backdrop-blur border-white/20 text-white hover:bg-white/20"
+              onClick={() => navigate("/admin/login")}
+            >
+              Admin Login
             </Button>
           </div>
         </div>
